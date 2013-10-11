@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DatapackageProxy - access datapackages in your browser with ease</title>
+</head>
+<style>
+.container {
+  width: 750px;
+  margin-right: auto;
+  margin-left: auto;
+  }
+h1, h2 {
+  font-family: sans;
+  }
+</style>
+<body>
+<div class="container">
+<h1>DatapackageProxy - access datapackages in your browser with ease</h1>
+<h2>DatapackageProxy?</h2>
+<p>
+<a href="http://data.okfn.org/standards/data-package">DataPackages</a> are a nice and
+neat tool to work with and bundle Data. However, working with them in
+browser-based apps is not straight forward. People's hosting doesn't
+support <a href="http://enable-cors.org">CORS</a> so including datapackag files using
+e.g. d3.csv does not work :/. <b>Datapackageproxy</b> to the rescue!
+
+DatapackageProxy is a appengine based script, that takes a datapackage url
+(without the trailing /datapackage.json) and allows you to access it's
+resources.
+
+e.g:
+
+<pre>
+http://datapackageproxy.appengine.com/resources?n=0&url=http://data.okfn.org/data/bond-yields-uk-10y
+</pre>
+
+shows the first resource in the datapackage. If you're not sure which
+resource to use, try:
+
+<pre>
+http://datapackageproxy.appengine.com/metadata?url=http://data.okfn.org/data/bond-yields-uk-10y
+</pre>
+
+This will return the metadata for the package.
+</p>
+<h2>Problems</h2>
+<p>
+If you encounter problems using datapackageproxy - that are not due to a
+faulty datapackage - please submit <a
+href="https://github.com/mihi-tr/datapackageproxy/issues">issues on
+Github</a>
+</p>
+<p>fork on <a href="http://github.com/mihi-tr/datapackageproxy">github</a>
+</p>
+</div>
+</body>
+</html>
