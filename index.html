@@ -12,22 +12,32 @@
 h1, h2 {
   font-family: sans;
   }
+header > h2 {
+  margin-top: 0px;
+  }
+header > h1 {
+  margin-bottom: 0px;
+  }
 </style>
 <body>
 <div class="container">
-<h1>DatapackageProxy - access datapackages in your browser with ease</h1>
+<header>
+  <h1>DatapackageProxy</h1>
+  <h2>access datapackages in your browser with ease</h2>
+</header>
 <h2>DatapackageProxy?</h2>
 <p>
 <a href="http://data.okfn.org/standards/data-package">DataPackages</a> are a nice and
 neat tool to work with and bundle Data. However, working with them in
 browser-based apps is not straight forward. People's hosting doesn't
 support <a href="http://enable-cors.org">CORS</a> so including datapackag files using
-e.g. d3.csv does not work :/. <b>Datapackageproxy</b> to the rescue!
+e.g. d3.csv does not work :/. <b>Datapackageproxy</b> to the rescue!</p>
 
-DatapackageProxy is a appengine based script, that takes a datapackage url
+<p>DatapackageProxy is a appengine based script, that takes a datapackage url
 (without the trailing /datapackage.json) and allows you to access it's
-resources.
+resources.</p>
 
+<p>
 e.g:
 
 <pre>
