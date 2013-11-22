@@ -3,8 +3,8 @@ import io
 import json
 import re
 import webapp2
-from google.appengine.api import urlfetch
 from datapackage import DataPackage
+from google.appengine.api import urlfetch
 from google.appengine.api import memcache
 
 class Resource(webapp2.RequestHandler):

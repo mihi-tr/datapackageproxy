@@ -17,7 +17,7 @@ resources.
 e.g:
 
 ```
-http://datapackageproxy.appspot.com/resources?n=0&url=http://data.okfn.org/data/bond-yields-uk-10y
+http://datapackageproxy.appspot.com/resource?n=0&url=http://data.okfn.org/data/bond-yields-uk-10y
 ```
 
 shows the first resource in the datapackage. If you're not sure which
